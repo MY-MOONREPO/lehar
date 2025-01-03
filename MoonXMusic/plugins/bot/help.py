@@ -95,3 +95,5 @@ async def helper_cb(client, CallbackQuery, _):
             await CallbackQuery.answer("ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴛʜᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ.ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ ᴏɴʟʏ ꜰᴏʀ ʙᴏᴛ ᴀᴅᴍɪɴꜱ.", show_alert=True)
             return
         await CallbackQuery.edit_message_text(helpers.HELP_17, reply_markup=keyboard)
+        await CallbackQuery.edit_message_text(helpers.HELP_16, reply_markup=keyboard)
+        await CallbackQuery.edit_message_text(helpers.HELP_2, reply_markup=keyboard)
