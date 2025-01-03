@@ -87,4 +87,11 @@ async def helper_cb(client, CallbackQuery, _):
     elif cb == "hb14":
         await CallbackQuery.edit_message_text(helpers.HELP_14, reply_markup=keyboard)
     elif cb == "hb15":
-        await CallbackQuery.edit_message_text(helpers.HELP_15, reply_markup=keyboard)
+         await CallbackQuery.edit_message_text(helpers.HELP_15, reply_markup=keyboard)
+    elif cb == "hb16":
+        await CallbackQuery.edit_message_text(helpers.HELP_16, reply_markup=keyboard)
+    elif cb == "hb17":
+        if CallbackQuery.from_user.id not in SUDOERS:
+            await CallbackQuery.answer("ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴛʜᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ.ᴛʜɪꜱ ꜰᴇᴀᴛᴜʀᴇ ᴏɴʟʏ ꜰᴏʀ ʙᴏᴛ ᴀᴅᴍɪɴꜱ.", show_alert=True)
+            return
+        await CallbackQuery.edit_message_text(helpers.HELP_17, reply_markup=keyboard)
